@@ -2,7 +2,7 @@
 
 // MARK: Character Equatable
 extension Character: Equatable {
-	static func ==(lhs: Character, rhs: Character) -> Bool {
+	public static func ==(lhs: Character, rhs: Character) -> Bool {
 		guard lhs.id == rhs.id else { return false }
 		guard lhs.name == rhs.name else { return false }
 		guard lhs.summary == rhs.summary else { return false }
@@ -13,7 +13,7 @@ extension Character: Equatable {
 }
 // MARK: Episode Equatable
 extension Episode: Equatable {
-	static func ==(lhs: Episode, rhs: Episode) -> Bool {
+	public static func ==(lhs: Episode, rhs: Episode) -> Bool {
 		guard lhs.id == rhs.id else { return false }
 		guard lhs.name == rhs.name else { return false }
 		guard lhs.summary == rhs.summary else { return false }
@@ -25,7 +25,7 @@ extension Episode: Equatable {
 }
 // MARK: Person Equatable
 extension Person: Equatable {
-	static func ==(lhs: Person, rhs: Person) -> Bool {
+	public static func ==(lhs: Person, rhs: Person) -> Bool {
 		guard lhs.id == rhs.id else { return false }
 		guard lhs.name == rhs.name else { return false }
 		guard lhs.summary == rhs.summary else { return false }
@@ -35,7 +35,7 @@ extension Person: Equatable {
 }
 // MARK: ScheduleTime Equatable
 extension ScheduleTime: Equatable {
-	static func ==(lhs: ScheduleTime, rhs: ScheduleTime) -> Bool {
+	public static func ==(lhs: ScheduleTime, rhs: ScheduleTime) -> Bool {
 		guard lhs.time?.hours == rhs.time?.hours else { return false }
 		guard lhs.time?.minutes == rhs.time?.minutes else { return false }
 		guard lhs.dayOfWeek == rhs.dayOfWeek else { return false }
@@ -44,7 +44,7 @@ extension ScheduleTime: Equatable {
 }
 // MARK: Show Equatable
 extension Show: Equatable {
-	static func ==(lhs: Show, rhs: Show) -> Bool {
+	public static func ==(lhs: Show, rhs: Show) -> Bool {
 		guard lhs.id == rhs.id else { return false }
 		guard lhs.name == rhs.name else { return false }
 		guard lhs.summary == rhs.summary else { return false }

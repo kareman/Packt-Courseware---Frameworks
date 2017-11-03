@@ -1,5 +1,5 @@
 import XCTest
-@testable import TVShows
+import TVShows
 
 class TVShowsDecodeTests: XCTestCase {
 	func testPerson() {

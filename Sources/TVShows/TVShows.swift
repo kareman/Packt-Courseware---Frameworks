@@ -1,13 +1,13 @@
 
 import Foundation
 
-enum DayOfWeek: String {
+public enum DayOfWeek: String {
 	case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 }
 
-struct ScheduleTime {
-	let time: (hours: Int, minutes: Int)?
-	let dayOfWeek: DayOfWeek
+public struct ScheduleTime {
+	public let time: (hours: Int, minutes: Int)?
+	public let dayOfWeek: DayOfWeek
 }
 
 extension ScheduleTime {
@@ -54,19 +54,19 @@ fileprivate struct ImageURLs: Codable {
 	let original: URL
 }
 
-struct Person: Codable {
-	let id: Int
-	let name: String
-	let summary: String?
-	let countryofbirth: String?
+public struct Person: Codable {
+	public let id: Int
+	public let name: String
+	public let summary: String?
+	public let countryofbirth: String?
 }
 
-struct Character {
-	let id: Int
-	let name: String
-	let summary: String?
-	let image: URL?
-	let actor: Person
+public struct Character {
+	public let id: Int
+	public let name: String
+	public let summary: String?
+	public let image: URL?
+	public let actor: Person
 }
 
 extension Character: Codable {
@@ -80,7 +80,7 @@ extension Character: Codable {
 		let summary: String?
 	}
 
-	init(from decoder: Decoder) throws {
+	public init(from decoder: Decoder) throws {
 		let actorandcharacter = try decoder.container(keyedBy: CodingKeys.self)
 		actor = try actorandcharacter.decode(Person.self, forKey: .person)
 		let character = try actorandcharacter.decode(CharacterDecoder.self, forKey: .character)
@@ -90,7 +90,7 @@ extension Character: Codable {
 		summary = character.summary
 	}
 
-	func encode(to encoder: Encoder) throws {
+	public func encode(to encoder: Encoder) throws {
 		var actorandcharacter = encoder.container(keyedBy: CodingKeys.self)
 		try actorandcharacter.encode(actor, forKey: .person)
 		let imageurls = image.map { ImageURLs(medium: $0, original: $0) }
@@ -99,13 +99,13 @@ extension Character: Codable {
 	}
 }
 
-struct Episode: Codable {
-	let id: Int
-	let name: String
-	let summary: String?
-	let season: Int
-	let episodeNr: Int? // Specials do not have episode number
-	let firstaired: Date?
+public struct Episode: Codable {
+	public let id: Int
+	public let name: String
+	public let summary: String?
+	public let season: Int
+	public let episodeNr: Int? // Specials do not have episode number
+	public let firstaired: Date?
 
 	private enum CodingKeys: String, CodingKey {
 		case id
@@ -117,26 +117,26 @@ struct Episode: Codable {
 	}
 }
 
-struct Show {
-	enum Status: String, Codable {
+public struct Show {
+	public enum Status: String, Codable {
 		case Running, Ended, ToBeDetermined  = "To Be Determined", InDevelopment = "In Development"
 	}
 
-	let id: Int
-	let name: String
-	let summary: String?
-	let image: URL?
-	let status: Status
-	let showtype: String
-	let length: Int?
-	let schedule: [ScheduleTime]
-	let genres: [String]
-	let officialSite: URL?
-	let airsOn: String?
-	let voteaverage: Double?
-	let crew: [(person: Person, role: String)]
-	let characters: [Character]
-	let episodes: [Episode]
+	public let id: Int
+	public let name: String
+	public let summary: String?
+	public let image: URL?
+	public let status: Status
+	public let showtype: String
+	public let length: Int?
+	public let schedule: [ScheduleTime]
+	public let genres: [String]
+	public let officialSite: URL?
+	public let airsOn: String?
+	public let voteaverage: Double?
+	public let crew: [(person: Person, role: String)]
+	public let characters: [Character]
+	public let episodes: [Episode]
 }
 
 extension Show: Codable {
@@ -146,7 +146,7 @@ extension Show: Codable {
 
 	private struct Crew: Codable { let type: String; let person: Person }
 
-	init(from decoder: Decoder) throws {
+	public init(from decoder: Decoder) throws {
 		let container = try decoder.container(keyedBy: CodingKeys.self)
 		id = try container.decode(Int.self, forKey: .id)
 		name = try container.decode(String.self, forKey: .name)
@@ -174,7 +174,7 @@ extension Show: Codable {
 		episodes = try embeddedContainer?.decodeIfPresent([Episode].self, forKey: .episodes) ?? []
 	}
 
-	func encode(to encoder: Encoder) throws {
+	public func encode(to encoder: Encoder) throws {
 		var container = encoder.container(keyedBy: CodingKeys.self)
 		try container.encode(id, forKey: .id)
 		try container.encode(name, forKey: .name)
