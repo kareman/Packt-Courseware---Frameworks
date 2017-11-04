@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		0B098AC3268997E3E3740B4A /* Pods_TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C40F61B99EF0A0E4C94163 /* Pods_TVShows.framework */; };
 		84F18F9BD00F931514EED577 /* Pods_TVShowsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC9FF77B0CB681643D023CC /* Pods_TVShowsTests.framework */; };
+		BA3D2DAC1FAD426300C1B84B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D2DAB1FAD426300C1B84B /* Provider.swift */; };
+		BA3D2DAE1FAD42B200C1B84B /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D2DAD1FAD42B200C1B84B /* ProviderTests.swift */; };
 		BA915F0B1FABDCEA00E3FA75 /* Equate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA915F091FABDCEA00E3FA75 /* Equate.swift */; };
 		BA915F0C1FABDCEA00E3FA75 /* TVShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA915F0A1FABDCEA00E3FA75 /* TVShows.swift */; };
 		BAB43C021FABE146004B557E /* EncodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB43C001FABE146004B557E /* EncodeTests.swift */; };
@@ -57,6 +59,8 @@
 		62D85E5FCDE94F3A0DBB34AC /* Pods-TVShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows/Pods-TVShows.release.xcconfig"; sourceTree = "<group>"; };
 		AFB129450E158D1458977E29 /* Pods-TVShowsPackageDescription.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShowsPackageDescription.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShowsPackageDescription/Pods-TVShowsPackageDescription.release.xcconfig"; sourceTree = "<group>"; };
 		B8B17370525B3DE7EBC28F23 /* Pods-TVShows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows/Pods-TVShows.debug.xcconfig"; sourceTree = "<group>"; };
+		BA3D2DAB1FAD426300C1B84B /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		BA3D2DAD1FAD42B200C1B84B /* ProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
 		BA915F091FABDCEA00E3FA75 /* Equate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equate.swift; sourceTree = "<group>"; };
 		BA915F0A1FABDCEA00E3FA75 /* TVShows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShows.swift; sourceTree = "<group>"; };
 		BAB43C001FABE146004B557E /* EncodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeTests.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			children = (
 				BAB43C011FABE146004B557E /* DecodeTest.swift */,
 				BAB43C001FABE146004B557E /* EncodeTests.swift */,
+				BA3D2DAD1FAD42B200C1B84B /* ProviderTests.swift */,
 				BAB43C041FABE187004B557E /* tvshow.json */,
 			);
 			name = TVShowsTests;
@@ -174,6 +179,7 @@
 			children = (
 				BA915F091FABDCEA00E3FA75 /* Equate.swift */,
 				BA915F0A1FABDCEA00E3FA75 /* TVShows.swift */,
+				BA3D2DAB1FAD426300C1B84B /* Provider.swift */,
 			);
 			name = TVShows;
 			path = Sources/TVShows;
@@ -410,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				BA3D2DAE1FAD42B200C1B84B /* ProviderTests.swift in Sources */,
 				BAB43C021FABE146004B557E /* EncodeTests.swift in Sources */,
 				BAB43C031FABE146004B557E /* DecodeTest.swift in Sources */,
 			);
@@ -420,6 +427,7 @@
 			buildActionMask = 0;
 			files = (
 				BA915F0C1FABDCEA00E3FA75 /* TVShows.swift in Sources */,
+				BA3D2DAC1FAD426300C1B84B /* Provider.swift in Sources */,
 				BA915F0B1FABDCEA00E3FA75 /* Equate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
