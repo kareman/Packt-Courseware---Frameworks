@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		"TVShows::TVShowsPackageTests::ProductTarget" /* TVShowsPackageTests */ = {
+		TVShows::TVShowsPackageTests::ProductTarget /* TVShowsPackageTests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = OBJ_39 /* Build configuration list for PBXAggregateTarget "TVShowsPackageTests" */;
 			buildPhases = (
@@ -21,12 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0B098AC3268997E3E3740B4A /* Pods_TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C40F61B99EF0A0E4C94163 /* Pods_TVShows.framework */; };
+		84F18F9BD00F931514EED577 /* Pods_TVShowsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC9FF77B0CB681643D023CC /* Pods_TVShowsTests.framework */; };
 		BA915F0B1FABDCEA00E3FA75 /* Equate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA915F091FABDCEA00E3FA75 /* Equate.swift */; };
 		BA915F0C1FABDCEA00E3FA75 /* TVShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA915F0A1FABDCEA00E3FA75 /* TVShows.swift */; };
 		BAB43C021FABE146004B557E /* EncodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB43C001FABE146004B557E /* EncodeTests.swift */; };
 		BAB43C031FABE146004B557E /* DecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB43C011FABE146004B557E /* DecodeTest.swift */; };
+		DFE5AD1E03047A94F7A520F8 /* Pods_TVShowsPackageDescription.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2383B3B4F394D4153A8BE1B0 /* Pods_TVShowsPackageDescription.framework */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_29 /* TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TVShows::TVShows::Product" /* TVShows.framework */; };
+		OBJ_29 /* TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = TVShows::TVShows::Product /* TVShows.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,22 +50,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06142C90EB9456CFA4F45EA4 /* Pods-TVShowsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShowsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShowsTests/Pods-TVShowsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2383B3B4F394D4153A8BE1B0 /* Pods_TVShowsPackageDescription.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShowsPackageDescription.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42189EC8F74A9B832C0C5D86 /* Pods-TVShowsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShowsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShowsTests/Pods-TVShowsTests.release.xcconfig"; sourceTree = "<group>"; };
+		61C40F61B99EF0A0E4C94163 /* Pods_TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D85E5FCDE94F3A0DBB34AC /* Pods-TVShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows/Pods-TVShows.release.xcconfig"; sourceTree = "<group>"; };
+		AFB129450E158D1458977E29 /* Pods-TVShowsPackageDescription.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShowsPackageDescription.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShowsPackageDescription/Pods-TVShowsPackageDescription.release.xcconfig"; sourceTree = "<group>"; };
+		B8B17370525B3DE7EBC28F23 /* Pods-TVShows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows/Pods-TVShows.debug.xcconfig"; sourceTree = "<group>"; };
 		BA915F091FABDCEA00E3FA75 /* Equate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equate.swift; sourceTree = "<group>"; };
 		BA915F0A1FABDCEA00E3FA75 /* TVShows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShows.swift; sourceTree = "<group>"; };
 		BAB43C001FABE146004B557E /* EncodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeTests.swift; sourceTree = "<group>"; };
 		BAB43C011FABE146004B557E /* DecodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeTest.swift; sourceTree = "<group>"; };
 		BAB43C041FABE187004B557E /* tvshow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tvshow.json; sourceTree = "<group>"; };
+		EEC9FF77B0CB681643D023CC /* Pods_TVShowsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShowsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2B286259D81B0CD9D27261 /* Pods-TVShowsPackageDescription.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShowsPackageDescription.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShowsPackageDescription/Pods-TVShowsPackageDescription.debug.xcconfig"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"TVShows::TVShows::Product" /* TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"TVShows::TVShowsTests::Product" /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		TVShows::TVShows::Product /* TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		TVShows::TVShowsTests::Product /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4BCA1972191EF22525D748B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE5AD1E03047A94F7A520F8 /* Pods_TVShowsPackageDescription.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 				OBJ_29 /* TVShows.framework in Frameworks */,
+				84F18F9BD00F931514EED577 /* Pods_TVShowsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +91,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0B098AC3268997E3E3740B4A /* Pods_TVShows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B75351139BCB3ED906A5CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C40F61B99EF0A0E4C94163 /* Pods_TVShows.framework */,
+				2383B3B4F394D4153A8BE1B0 /* Pods_TVShowsPackageDescription.framework */,
+				EEC9FF77B0CB681643D023CC /* Pods_TVShowsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA693A855FF1B0109D9E1E99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8B17370525B3DE7EBC28F23 /* Pods-TVShows.debug.xcconfig */,
+				62D85E5FCDE94F3A0DBB34AC /* Pods-TVShows.release.xcconfig */,
+				FF2B286259D81B0CD9D27261 /* Pods-TVShowsPackageDescription.debug.xcconfig */,
+				AFB129450E158D1458977E29 /* Pods-TVShowsPackageDescription.release.xcconfig */,
+				06142C90EB9456CFA4F45EA4 /* Pods-TVShowsTests.debug.xcconfig */,
+				42189EC8F74A9B832C0C5D86 /* Pods-TVShowsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +143,8 @@
 		OBJ_13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"TVShows::TVShowsTests::Product" /* TVShowsTests.xctest */,
-				"TVShows::TVShows::Product" /* TVShows.framework */,
+				TVShows::TVShowsTests::Product /* TVShowsTests.xctest */,
+				TVShows::TVShows::Product /* TVShows.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -111,6 +156,8 @@
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_13 /* Products */,
+				CA693A855FF1B0109D9E1E99 /* Pods */,
+				37B75351139BCB3ED906A5CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,11 +182,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"TVShows::SwiftPMPackageDescription" /* TVShowsPackageDescription */ = {
+		TVShows::SwiftPMPackageDescription /* TVShowsPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_17 /* Build configuration list for PBXNativeTarget "TVShowsPackageDescription" */;
 			buildPhases = (
+				6916FDE855178F4D204E9217 /* [CP] Check Pods Manifest.lock */,
 				OBJ_20 /* Sources */,
+				4BCA1972191EF22525D748B1 /* Frameworks */,
+				9C78ADE9B62922EFCC0AAB3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,12 +199,14 @@
 			productName = TVShowsPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"TVShows::TVShows" /* TVShows */ = {
+		TVShows::TVShows /* TVShows */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "TVShows" */;
 			buildPhases = (
+				8E7072B577B027961911F76F /* [CP] Check Pods Manifest.lock */,
 				OBJ_35 /* Sources */,
 				OBJ_37 /* Frameworks */,
+				F82E97CD1FE141F069FA7F49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,15 +214,18 @@
 			);
 			name = TVShows;
 			productName = TVShows;
-			productReference = "TVShows::TVShows::Product" /* TVShows.framework */;
+			productReference = TVShows::TVShows::Product /* TVShows.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"TVShows::TVShowsTests" /* TVShowsTests */ = {
+		TVShows::TVShowsTests /* TVShowsTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "TVShowsTests" */;
 			buildPhases = (
+				6378B1A61982051F18C3AE7D /* [CP] Check Pods Manifest.lock */,
 				OBJ_26 /* Sources */,
 				OBJ_28 /* Frameworks */,
+				75701B538BD849903564AFC4 /* [CP] Embed Pods Frameworks */,
+				AA34A3A7178100399A499AD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,7 +234,7 @@
 			);
 			name = TVShowsTests;
 			productName = TVShowsTests;
-			productReference = "TVShows::TVShowsTests::Product" /* TVShowsTests.xctest */;
+			productReference = TVShows::TVShowsTests::Product /* TVShowsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,13 +265,137 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"TVShows::SwiftPMPackageDescription" /* TVShowsPackageDescription */,
-				"TVShows::TVShowsTests" /* TVShowsTests */,
-				"TVShows::TVShows" /* TVShows */,
-				"TVShows::TVShowsPackageTests::ProductTarget" /* TVShowsPackageTests */,
+				TVShows::SwiftPMPackageDescription /* TVShowsPackageDescription */,
+				TVShows::TVShowsTests /* TVShowsTests */,
+				TVShows::TVShows /* TVShows */,
+				TVShows::TVShowsPackageTests::ProductTarget /* TVShowsPackageTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6378B1A61982051F18C3AE7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVShowsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6916FDE855178F4D204E9217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVShowsPackageDescription-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75701B538BD849903564AFC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TVShowsTests/Pods-TVShowsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVShowsTests/Pods-TVShowsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E7072B577B027961911F76F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVShows-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C78ADE9B62922EFCC0AAB3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVShowsPackageDescription/Pods-TVShowsPackageDescription-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA34A3A7178100399A499AD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVShowsTests/Pods-TVShowsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F82E97CD1FE141F069FA7F49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVShows/Pods-TVShows-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_20 /* Sources */ = {
@@ -250,12 +429,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "TVShows::TVShows" /* TVShows */;
+			target = TVShows::TVShows /* TVShows */;
 			targetProxy = BA915F071FABD56600E3FA75 /* PBXContainerItemProxy */;
 		};
 		OBJ_42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "TVShows::TVShowsTests" /* TVShowsTests */;
+			target = TVShows::TVShowsTests /* TVShowsTests */;
 			targetProxy = BA915F081FABD56600E3FA75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -263,6 +442,7 @@
 /* Begin XCBuildConfiguration section */
 		OBJ_18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2B286259D81B0CD9D27261 /* Pods-TVShowsPackageDescription.debug.xcconfig */;
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Library/Developer/Toolchains/swift-4.0.2-RELEASE.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
@@ -272,6 +452,7 @@
 		};
 		OBJ_19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB129450E158D1458977E29 /* Pods-TVShowsPackageDescription.release.xcconfig */;
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Library/Developer/Toolchains/swift-4.0.2-RELEASE.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
@@ -281,6 +462,7 @@
 		};
 		OBJ_24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06142C90EB9456CFA4F45EA4 /* Pods-TVShowsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -302,6 +484,7 @@
 		};
 		OBJ_25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42189EC8F74A9B832C0C5D86 /* Pods-TVShowsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -344,6 +527,7 @@
 		};
 		OBJ_33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B17370525B3DE7EBC28F23 /* Pods-TVShows.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -369,6 +553,7 @@
 		};
 		OBJ_34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D85E5FCDE94F3A0DBB34AC /* Pods-TVShows.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
