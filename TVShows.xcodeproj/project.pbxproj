@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		TVShows::TVShowsPackageTests::ProductTarget /* TVShowsPackageTests */ = {
+		"TVShows::TVShowsPackageTests::ProductTarget" /* TVShowsPackageTests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = OBJ_39 /* Build configuration list for PBXAggregateTarget "TVShowsPackageTests" */;
 			buildPhases = (
@@ -29,7 +29,7 @@
 		BAB43C031FABE146004B557E /* DecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB43C011FABE146004B557E /* DecodeTest.swift */; };
 		DFE5AD1E03047A94F7A520F8 /* Pods_TVShowsPackageDescription.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2383B3B4F394D4153A8BE1B0 /* Pods_TVShowsPackageDescription.framework */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_29 /* TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = TVShows::TVShows::Product /* TVShows.framework */; };
+		OBJ_29 /* TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TVShows::TVShows::Product" /* TVShows.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		EEC9FF77B0CB681643D023CC /* Pods_TVShowsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShowsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2B286259D81B0CD9D27261 /* Pods-TVShowsPackageDescription.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShowsPackageDescription.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShowsPackageDescription/Pods-TVShowsPackageDescription.debug.xcconfig"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		TVShows::TVShows::Product /* TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		TVShows::TVShowsTests::Product /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TVShows::TVShows::Product" /* TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TVShows::TVShowsTests::Product" /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 		OBJ_13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				TVShows::TVShowsTests::Product /* TVShowsTests.xctest */,
-				TVShows::TVShows::Product /* TVShows.framework */,
+				"TVShows::TVShowsTests::Product" /* TVShowsTests.xctest */,
+				"TVShows::TVShows::Product" /* TVShows.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -182,7 +182,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		TVShows::SwiftPMPackageDescription /* TVShowsPackageDescription */ = {
+		"TVShows::SwiftPMPackageDescription" /* TVShowsPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_17 /* Build configuration list for PBXNativeTarget "TVShowsPackageDescription" */;
 			buildPhases = (
@@ -199,7 +199,7 @@
 			productName = TVShowsPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		TVShows::TVShows /* TVShows */ = {
+		"TVShows::TVShows" /* TVShows */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "TVShows" */;
 			buildPhases = (
@@ -214,10 +214,10 @@
 			);
 			name = TVShows;
 			productName = TVShows;
-			productReference = TVShows::TVShows::Product /* TVShows.framework */;
+			productReference = "TVShows::TVShows::Product" /* TVShows.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		TVShows::TVShowsTests /* TVShowsTests */ = {
+		"TVShows::TVShowsTests" /* TVShowsTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "TVShowsTests" */;
 			buildPhases = (
@@ -234,7 +234,7 @@
 			);
 			name = TVShowsTests;
 			productName = TVShowsTests;
-			productReference = TVShows::TVShowsTests::Product /* TVShowsTests.xctest */;
+			productReference = "TVShows::TVShowsTests::Product" /* TVShowsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +243,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 0910;
 				TargetAttributes = {
 					"TVShows::TVShows" = {
 						LastSwiftMigration = 0910;
@@ -265,10 +265,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				TVShows::SwiftPMPackageDescription /* TVShowsPackageDescription */,
-				TVShows::TVShowsTests /* TVShowsTests */,
-				TVShows::TVShows /* TVShows */,
-				TVShows::TVShowsPackageTests::ProductTarget /* TVShowsPackageTests */,
+				"TVShows::SwiftPMPackageDescription" /* TVShowsPackageDescription */,
+				"TVShows::TVShowsTests" /* TVShowsTests */,
+				"TVShows::TVShows" /* TVShows */,
+				"TVShows::TVShowsPackageTests::ProductTarget" /* TVShowsPackageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -429,12 +429,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = TVShows::TVShows /* TVShows */;
+			target = "TVShows::TVShows" /* TVShows */;
 			targetProxy = BA915F071FABD56600E3FA75 /* PBXContainerItemProxy */;
 		};
 		OBJ_42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = TVShows::TVShowsTests /* TVShowsTests */;
+			target = "TVShows::TVShowsTests" /* TVShowsTests */;
 			targetProxy = BA915F081FABD56600E3FA75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,7 +466,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -488,7 +487,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -507,12 +505,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
@@ -580,11 +602,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
