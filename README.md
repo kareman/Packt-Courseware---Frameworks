@@ -5,7 +5,7 @@ This project is part of [Professional Swift Courseware](https://www.packtpub.com
 Content for 3-day training:
 
 * **Day 1**
-* [Day 2]()
+* [Day 2](https://github.com/robkerr/PacktProSwiftDay2)
 * [Day 3](https://github.com/gokselkoksal/RedCarpet/)
 
 ## Day 1 – Lesson 3
